@@ -208,6 +208,29 @@ section.experience{
 
 }
 
+.experience__section__title{
+    text-align: center;
+    font-size: 2em;
+}
+
+.experiencie__box{
+    display: flex;
+}
+
+.experience__info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience__title{
+    font-size: 1.5em;
+}
+
+.experience__text{
+    font-size: 15px;
+}
+
 /*Contacto*/
 
 section.formcontato{
