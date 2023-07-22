@@ -40,6 +40,14 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
+.menu__header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__header img {
+    width: 22px;
+}
 
 section.menu{
     display: flex;
@@ -63,17 +71,63 @@ section.menu{
 .title__div{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.title__bio{
+    font-size: 50px;
+}
+
+.title__subsection{
+    font-size: 19px;
+}
+
+.title__network{
+    display: flex;
+    padding: 0;
+}
+
+.title__network__item{
+    font-size: 20px;
+    margin: 10px 20px 0 0;
 }
 
 .title__container{
     width: 50%;
-    
+    text-align: center;
 }
 
 /*Sección About*/
 
 section.about{
+    background-color:azure;
+    padding: 50px 600px 50px 200px;
+}
 
+.about__title{
+    font-size: 2em;
+}
+
+.skills{
+    background-color:lightgray;
+}
+
+.skills__title{
+    text-align: center;
+    font-size: 2em;
+}
+
+.skills__line{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills__box{
+    background-color: #F5F5F5;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    margin: 30px 10px 30px 10px;
+    flex-wrap: nowrap;
 }
 
 /*Sección Hobbies*/
