@@ -142,9 +142,35 @@ section.about{
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    background-color:lightgray;
 }
 
+.hobbies__title{
+    text-align: center;
+    font-size: 2em;
+}
+
+.hobbies__line{
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies__box{
+    display: flex;
+    flex-direction: column; 
+    background-color: #F5F5F5;
+    width: 11em;
+    height: 11em;
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    margin: 18px 10px 50px 0;
+}
+
+.hobbies__box ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+}
 /* Experiencia Académica*/
 
 section.academic{
