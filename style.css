@@ -122,20 +122,22 @@ section.about{
     justify-content: center;
 }
 
-.skills__box{
+.skills__box {
+    display: flex;
+    flex-direction: column; 
     background-color: #F5F5F5;
     width: 11em;
     height: 11em;
-    margin: 18px 10px 50px 10px;
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    margin: 18px 10px 50px 0;
 }
 
-.skills__img{
+.skills__box ul {
     display: flex;
     flex-direction: column;
-    width: 2em;
-    height: 2em;
-    align-items: flex-start;
-}
+    padding-left: 2em;
+  }  
 
 /*Sección Hobbies*/
 
