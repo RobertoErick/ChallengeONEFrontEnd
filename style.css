@@ -215,37 +215,58 @@ section.experience{
 
 .experiencie__box{
     display: flex;
+    justify-content: center;
+}
+
+.experiencie__box#reverse{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
 }
 
 .experience__info{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 15px;
+    margin-right: 100px;
+    width: 300px;
 }
 
 .experience__title{
-    font-size: 1.5em;
+    font-weight:700;
+    font-size: 1em;
     margin-bottom: 0%;
 }
 
 .experience__text{
+    font-size: 17px;
     font-weight: lighter;
 }
 
 .experiencia__botao--repo{
-    font-size: 15px;
+    font-size: 20px;
     border-color: blue;
     color: blue;
     padding: 15px 15px 15px 15px;
 }
 
 .experience__botao--demo{
+    font-size: 20px;
     background-color: blue;
     color: #F5F5F5;
     padding: 15px 15px 15px 15px;
     border-color: blue;
     margin-left: 11px;
+}
+
+.experience__info{
+    font-weight:700;
+    font-size: 1.5em;
+}
+
+.experiencie__box{
+ 
 }
 
 /*Contacto*/
