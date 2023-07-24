@@ -282,7 +282,56 @@ section.experience{
 /*Contacto*/
 
 section.formcontato{
+    background-color: azure;
+    padding-top: 150px;
+}
 
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formcontato__text{
+    height: 640px;
+    padding-left: 20px;
+}
+
+.formcontato__title{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.formcontato__subtext{
+    font-weight: lighter;
+    margin: 0 0 0 0;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 42px;
+    height: 460px;
+}
+
+.formcontato__input{
+    height: 40px;
+    padding: 10px 10px 10px 20px;
+}
+
+.formcontato__textarea{
+    padding: 30px 10px 20px 20px;
+}
+
+.formcontato__botao{
+    background-color: blue;
+    color: #F5F5F5;
+    border-color: blue;
+    font-size: 20px;
+    padding: 15px 15px 15px 15px;
+    width: 200px;
 }
 
 /*footeer*/
