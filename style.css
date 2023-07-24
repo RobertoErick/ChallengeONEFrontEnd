@@ -221,14 +221,31 @@ section.experience{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 15px;
 }
 
 .experience__title{
     font-size: 1.5em;
+    margin-bottom: 0%;
 }
 
 .experience__text{
+    font-weight: lighter;
+}
+
+.experiencia__botao--repo{
     font-size: 15px;
+    border-color: blue;
+    color: blue;
+    padding: 15px 15px 15px 15px;
+}
+
+.experience__botao--demo{
+    background-color: blue;
+    color: #F5F5F5;
+    padding: 15px 15px 15px 15px;
+    border-color: blue;
+    margin-left: 11px;
 }
 
 /*Contacto*/
