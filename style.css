@@ -221,21 +221,31 @@ section.experience{
 .experiencie__box#reverse{
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
     flex-direction: row-reverse;
-
 }
 
-.experience__info{
+.experiencie__info{
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-right: 100px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.experience__info#reverse{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 120px;
     width: 300px;
 }
 
 .experience__title{
     font-weight:700;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 0%;
 }
 
