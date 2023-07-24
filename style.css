@@ -283,7 +283,7 @@ section.experience{
 
 section.formcontato{
     background-color: azure;
-    padding-top: 150px;
+    padding: 100px 0 40px 0;
 }
 
 .formcontato__contacto{
@@ -337,7 +337,16 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+   display: flex;
+   justify-content: center;
+   margin: 30px 0 30px 0;
+}
+
+.footer__rodape p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 0;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
