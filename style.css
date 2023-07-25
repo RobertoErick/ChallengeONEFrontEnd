@@ -436,7 +436,7 @@ section.about{
 }
 
 .academic__courses__item__img{
-    padding: 40px 60px 40px 60px;
+    padding: 40px 68px 40px 68px;
     display: flex;
     justify-content: center;
 }
@@ -452,8 +452,38 @@ section.about{
 .academic__courses__item__subtitle p{
     font-size: 15px;
 }
-/*Experiencia Profesional*/
 
+/*Experiencia Profesional*/
+.experiencie__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencie__box#reverse{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__img{
+    margin: 0 40px 0 40px;
+}
+
+.experiencie__info{
+    margin-left: 40px;
+}
+
+.experience__info{
+    margin:20px 0 0 40px;
+}
+}
+
+/*Contacto*/
+.formcontato#contacto{
+    padding: 20px 0 0 0;
+}
+
+.formcontato__img{
+    display: none;
 }
 
 /*Mobile*/
