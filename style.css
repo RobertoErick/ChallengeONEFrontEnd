@@ -46,7 +46,9 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .menu__header img {
-    width: 22px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
 }
 
 section.menu{
@@ -60,6 +62,10 @@ section.menu{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.menu__title{
+    width: 120px;
 }
 
 .menu__list__item{
@@ -354,11 +360,23 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 /* Menú */
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+}
+.menu__list__item{
+    display: none;
+}
 
+#contacto{
+    display: block;
+}
 /*title*/
+
 
 /*Skills*/
 
