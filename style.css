@@ -401,6 +401,10 @@ section.menu{
     font-weight: lighter;
 }
 
+/*About*/
+section.about{
+    padding: 10px 26px 30px 30px;
+}
 /*Skills*/
 
 /*Hobbies*/
