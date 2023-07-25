@@ -475,15 +475,19 @@ section.about{
 .experience__info{
     margin:20px 0 0 40px;
 }
-}
 
 /*Contacto*/
 .formcontato#contacto{
     padding: 20px 0 0 0;
 }
 
+.formcontato__form {
+    margin-right: 20px;
+}
+
 .formcontato__img{
     display: none;
+}
 }
 
 /*Mobile*/
