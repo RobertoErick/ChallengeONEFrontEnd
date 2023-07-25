@@ -405,12 +405,53 @@ section.menu{
 section.about{
     padding: 10px 26px 30px 30px;
 }
+
 /*Skills*/
+.skills__line{
+    flex-wrap: wrap;
+}
+
+.skills__box{
+    height: 7em;
+    width: 13em;
+    margin: 10px 11px 50px 10px;
+}
 
 /*Hobbies*/
+.hobbies__line{
+    flex-wrap: wrap;
+}
+
+.hobbies__box{
+    height: 7em;
+    width: 13em;
+    margin: 10px 11px 50px 10px;
+}
 
 /*Formación Académica*/
 
+.academic__courses__item__img img{
+    width: 75px;
+    height: 50px;
+}
+
+.academic__courses__item__img{
+    padding: 40px 60px 40px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses__list{
+    padding: 0 10px 0 10px;
+}
+
+.academic__courses__item__title h4{
+    font-size: 18px;
+}
+
+.academic__courses__item__subtitle p{
+    font-size: 15px;
+}
 /*Experiencia Profesional*/
 
 }
