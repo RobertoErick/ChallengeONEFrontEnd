@@ -525,9 +525,14 @@ section.about{
 /*Sección sobre mi*/
 
 /*Skills*/
+.skills__box{
+    width: 11em;
+}
 
 /*Hobbies*/
- 
+.hobbies__box{
+    width: 11em;
+}
 /*Formación Académica*/
 
 /*Experiencia Profesional*/
