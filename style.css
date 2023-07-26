@@ -491,12 +491,37 @@ section.about{
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
 
 /*Menu*/
+.menu__list__item{
+    margin: 0 0 0 0px;
+}
+
+.menu__list__item#contacto b{
+    font-weight: lighter;
+}
 
 /*Titulo*/
+.title__div{
+    display: flex;
+    flex-direction: column;
+}
 
+.title__container{
+    width: 100%;
+}
+
+.title__network{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__network__item{
+    font-size: 15px;
+    margin: 10px 15px 0 0;
+    font-weight: bold;
+}
 /*Sección sobre mi*/
 
 /*Skills*/
