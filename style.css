@@ -533,8 +533,42 @@ section.about{
 .hobbies__box{
     width: 11em;
 }
-/*Formación Académica*/
 
+/*Formación Académica*/
+.academic__courses{
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__courses__box{
+    height: 350px;
+}
+
+.academic__courses__item__img{
+    padding: 40px 0 40px 0;
+    margin: 0 20px 0 20px;
+}
+
+.academic__courses__item__img img{
+    width: 150px;
+    height: 120px;
+}
+
+.academic__courses__item__title{
+    margin-left: 20px;
+}
+
+.academic__courses__item__title h4{
+    font-size: 25px;
+}
+
+.academic__courses__item__subtitle{
+    margin-left: 20px;
+}
+
+.academic__courses__item__subtitle p{
+    font-size: 25px;
+}
 /*Experiencia Profesional*/
 
  /*Contacto*/
