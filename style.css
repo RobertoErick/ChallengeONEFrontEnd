@@ -305,14 +305,98 @@ section.formcontato{
     height: 460px;
 }
 
-.formcontato__input{
+.input-container {
     position: relative;
+    margin-right: 20px;
+}
+  
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    outline: none;
     height: 40px;
-    padding: 10px 10px 10px 20px;
+    padding: 20px 0 0 20px;
+}
+  
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding: 20px 0 0 20px;
+  }
+  
+.input-container input[type="text"]:focus ~ .label, .input-container input[type="text"]:valid ~ .label{
+    top: -10px;
+    font-size: 14px;
+    color: cornflowerblue;
+}
+  
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: cornflowerblue;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+  
+.input-container input[type="text"]:focus ~ .underline{
+    transform: scaleX(1);
 }
 
-.formcontato__textarea{
-    padding: 30px 10px 20px 20px;
+.input-container__textarea{
+    position: relative;
+    margin-right: 20px;
+}
+
+.input-container__textarea input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    outline: none;
+    height: 100px;
+    padding: 20px 0 0 20px;
+}
+
+.input-container__textarea .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding: 20px 0 0 20px;
+  }
+
+.input-container__textarea input[type="text"]:focus ~ .label, .input-container input[type="text"]:valid ~ .label{
+    top: -10px;
+    font-size: 14px;
+    color: cornflowerblue;
+}
+  
+.input-container__textarea .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: cornflowerblue;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+  
+.input-container__textarea input[type="text"]:focus ~ .underline{
+    transform: scaleX(1);
 }
 
 .formcontato__botao{
@@ -323,23 +407,8 @@ section.formcontato{
     padding: 15px 15px 15px 15px;
     width: 200px;
 }
-  
-/* Estilos para el placeholder (palabra "Nombre") */
-.formcontato__input::placeholder {
-    position: absolute;
-    left: 10px; /* Ajusta la posición izquierda según tus necesidades */
-    top: 23px; /* Ajusta la posición superior según tus necesidades */
-    pointer-events: none; /* Para evitar que el placeholder interfiera con el input */
-    transition: top 0.3s ease; /* La animación durará 0.3 segundos con una transición suave */
-    color: #555;
-}
-  
-  /* Estilos para el placeholder cuando el input tiene foco o está lleno */
-.formcontato__input:focus::placeholder,
-.formcontato__input:not(:placeholder-shown)::placeholder {
-    top: 8px; /* Ajusta la nueva posición superior cuando el input tiene foco o está lleno */
-    color:cornflowerblue; /* Puedes ajustar el color de la palabra cuando está arriba */
-}
+
+
 
 /*footeer*/
 section.footer{
