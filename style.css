@@ -100,7 +100,6 @@ section.menu{
 
 .title__container{
     width: 50%;
-    text-align: center;
 }
 
 /*Sección About*/
@@ -112,10 +111,6 @@ section.about{
 
 .about__title{
     font-size: 2em;
-}
-
-.skills{
-    background-color:lightgray;
 }
 
 .skills__title{
@@ -131,7 +126,7 @@ section.about{
 .skills__box {
     display: flex;
     flex-direction: column; 
-    background-color: #F5F5F5;
+    background-color: white;
     width: 11em;
     height: 11em;
     justify-content: flex-end; 
@@ -147,10 +142,6 @@ section.about{
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    background-color:lightgray;
-}
-
 .hobbies__title{
     text-align: center;
     font-size: 2em;
@@ -164,7 +155,7 @@ section.hobbies{
 .hobbies__box{
     display: flex;
     flex-direction: column; 
-    background-color: #F5F5F5;
+    background-color: white;
     width: 11em;
     height: 11em;
     justify-content: flex-end; 
@@ -194,7 +185,7 @@ section.academic{
 }
 
 .academic__courses__item__img{
-    background-color: #F5F5F5;
+    background-color: white;
     padding: 85px 85px 85px 85px;
 }
 
@@ -209,10 +200,6 @@ section.academic{
     font-size: 18px;
 }
 /* experiencia*/
-
-section.experience{
-
-}
 
 .experience__section__title{
     text-align: center;
@@ -281,10 +268,6 @@ section.experience{
     font-size: 1.5em;
 }
 
-.experiencie__box{
- 
-}
-
 /*Contacto*/
 
 section.formcontato{
@@ -323,6 +306,7 @@ section.formcontato{
 }
 
 .formcontato__input{
+    position: relative;
     height: 40px;
     padding: 10px 10px 10px 20px;
 }
@@ -339,9 +323,25 @@ section.formcontato{
     padding: 15px 15px 15px 15px;
     width: 200px;
 }
+  
+/* Estilos para el placeholder (palabra "Nombre") */
+.formcontato__input::placeholder {
+    position: absolute;
+    left: 10px; /* Ajusta la posición izquierda según tus necesidades */
+    top: 23px; /* Ajusta la posición superior según tus necesidades */
+    pointer-events: none; /* Para evitar que el placeholder interfiera con el input */
+    transition: top 0.3s ease; /* La animación durará 0.3 segundos con una transición suave */
+    color: #555;
+}
+  
+  /* Estilos para el placeholder cuando el input tiene foco o está lleno */
+.formcontato__input:focus::placeholder,
+.formcontato__input:not(:placeholder-shown)::placeholder {
+    top: 8px; /* Ajusta la nueva posición superior cuando el input tiene foco o está lleno */
+    color:cornflowerblue; /* Puedes ajustar el color de la palabra cuando está arriba */
+}
 
 /*footeer*/
-
 section.footer{
    display: flex;
    justify-content: center;
