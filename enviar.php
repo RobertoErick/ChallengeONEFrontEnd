@@ -1,24 +1,27 @@
 <?php
-$name = $_POST['name'];
-$mail = $_POST['mail'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+if (isset($_POST['enviar'])) {
+    $to = 'tonitotanote1@gmail.com'; // Dirección de correo electrónico de destino
+    $subject = $_POST['subject'];
+    $name = $_POST['name'];
+    $email = $_POST['mail'];
+    $message = $_POST['message'];
 
-$header = 'Form: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+    // Formatear el contenido del correo
+    $email_message = "Nombre: $name\n";
+    $email_message .= "E-mail: $email\n";
+    $email_message .= "Asunto: $subject\n";
+    $email_message .= "Mensaje: $message\n";
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su e-mail es: " . $mail . " \r\n";
-$message .= "Asunto: " . $subject . " \r\n";
-$message .= "Mensaje: " . $_POST['message'] . " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time ());
+    // Ajusta el remitente del correo (puede variar según la configuración del servidor)
+    $headers = 'From: ' . $email . "\r\n" .
+        'Reply-To: ' . $email . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
 
-$para = 'tonitotanote1@gmail.com';
-$asunto = 'Contacto personal';
-
-mail($para, $asunto, utf8_decode($message), $header);
-
-header("Location:index.html");
+    // Intentar enviar el correo
+    if (@mail($to, $subject, $email_message, $headers)) {
+        echo '<p>Mensaje enviado correctamente. Gracias por contactarnos.</p>';
+    } else {
+        echo '<p>Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.</p>';
+    }
+}
 ?>
